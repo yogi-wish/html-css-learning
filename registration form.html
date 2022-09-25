@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5500/index2.html?gender=on -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+</head>
+
+<body background="./registration form_files/Welcome Scan.jpg">
+    <h2 align="right">Student registration form
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+    <form>
+        <table align="right" cellpadding="5" bgcolor="skyblue">
+            <tbody><tr>
+                <td>
+                Name:
+                </td>
+                <td>
+                    <input type="text" placeholder="Name">
+                </td>
+            </tr>
+            <tr><td>
+                Roll No.:
+            </td>
+            <td>
+                <input type="text" placeholder="Roll no">
+            </td>
+            </tr><tr>
+                <td>
+                    Mobile No.:
+                </td>
+                <td>
+                    <input type="text" placeholder="mobile no">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    email address:
+                </td>
+                <td>
+                    <input type="email" placeholder="email@gmail.com">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password:
+                </td>
+                <td>
+                    <input type="password" placeholder="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gender:
+                </td>
+                <td>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Date of birth:
+                </td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Hobbies:
+                </td>
+                <td>
+                    <input type="checkbox">singing
+                    <input type="checkbox">dancing
+                    <input type="checkbox">hicking
+                    <input type="checkbox">treking
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Educational Qualification:
+                </td>
+                <td>
+                    <select>
+                        <option>Select option</option>
+                        <option>10th</option>
+                        <option>12th</option>
+                        <option>Graduation</option>
+                        <option>Post graduation</option>
+                        <option>None</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address:
+                </td>
+                <td>
+                    <textarea row="5" column="20" placeholder="address"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="Submit" value="Submit">
+                    <input type="Reset" value="Reset">
+                </td>
+            </tr>
+        </tbody></table>
+    </form>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
